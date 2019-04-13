@@ -1,0 +1,12 @@
+server:
+  port: 8001
+#\u6307\u5B9A\u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.13.128:8081/eurekaserver/eureka/
+      #\u82E5\u6CE8\u518C\u4E2D\u5FC3\u8BBF\u95EE\u5730\u5740\u4E3A\uFF1Ahttp://192.168.13.128:8081/eurekaserver\u52A0\u4E0A/eureka/
+#\u670D\u52A1\u7684\u540D\u79F0
+spring:
+  application:
+    name: product-service
