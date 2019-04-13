@@ -13,10 +13,18 @@ public class ProductServiceImpl implements ProductService {
 
     //模拟数据库商品数据
     static {
-        Product p1 = new Product(1, "苹果X", 9999, 10);
-        Product p2 = new Product(2, "冰箱", 5342, 19);
-        Product p3 = new Product(3, "洗衣机", 523, 90);
-        Product p4 = new Product(4, "电话", 64345, 150);
+        Product p1 = new Product();
+        p1.setId(1);
+        p1.setName("Mate30pro");
+        p1.setPrice(6999);
+        p1.setStore(100);
+        Product p2 = new Product();
+        p2.setId(2);
+        p2.setName("苹果x1");
+        p2.setPrice(5000);
+        p2.setStore(12);
+        Product p3 = new Product();
+        Product p4 = new Product();
 
         daoMap.put(p1.getId(), p1);
         daoMap.put(p2.getId(), p2);
