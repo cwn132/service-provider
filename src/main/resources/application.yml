@@ -10,3 +10,5 @@ eureka:
 spring:
   application:
     name: product-service
+  main:
+    allow-bean-definition-overriding: true #\u89E3\u51B3\uFF1A\u591A\u4E2A\u63A5\u53E3\u4E0A\u7684@FeignClient(\u201C\u76F8\u540C\u670D\u52A1\u540D\u201D)\u4F1A\u62A5\u9519\uFF0Coverriding is disabled\uFF0C\u5373\u51FA\u73B0\u4E86\u76F8\u540C\u7684Bean\u540D
